@@ -35,7 +35,13 @@ def deposit(balance, amount):
     # TODO: check that amount > 0
     # TODO: if valid, add amount to balance
     # TODO: if invalid, print an error and return balance unchanged
-    pass
+    #pass
+    if amount > 0:
+        balance += amount
+        print(f"Successfully deposited ${amount:.2f}. New balance: ${balance:.2f}") 
+    else:
+        print("Invalid deposit amount. Please enter a positive value.")
+    return balance
 
 
 def withdraw(balance, amount):
